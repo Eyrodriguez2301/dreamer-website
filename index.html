@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    animation: rainbow 10s linear infinite;
+    background-size: 400% 400%;
+    background-image: linear-gradient(
+      270deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet,
+      red
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 10px;
+    text-shadow: 2px 2px 5px black, 0 0 10px white;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px;
+    text-shadow: 1px 1px 3px black, 0 0 6px white;
+  }
+
+  a.button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px black;
+  }
+
+  a.button:hover {
+    background-color: #eee;
+  }
+
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Epic Ethanadiel Website</h1>
+<p>Welcome to my website.</p>
+
+<a class="button" href="menu.html">Go to Glazing Page</a>
+
+</body>
+</html>
