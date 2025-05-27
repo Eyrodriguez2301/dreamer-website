@@ -122,25 +122,53 @@
   
   <div style="display: flex; flex-direction: column; gap: 20px; align-items: center; margin-top: 20px;">
 
-    <div>
-      <button onclick="document.getElementById('audio1').play()" class="button">Play Barbie Girl</button><br>
-      <audio id="audio1" src="Barbie Girl.wav"></audio>
-    </div>
-
-    <div>
-      <button onclick="document.getElementById('audio2').play()" class="button">Play Mac N Cheese</button><br>
-      <audio id="audio2" src="Mac N Cheese.wav"></audio>
-    </div>
-
-    <div>
-      <button onclick="document.getElementById('audio3').play()" class="button">Play The Trio Remastered</button><br>
-      <audio id="audio3" src="The Trio Mastered.wav"></audio>
-    </div>
-
+   <h2>Dreamer Music</h2>
+<div id="music-players">
+  <div class="track">
+    <p>🎵 Barbie Girl</p>
+    <audio id="audio1" src="Barbie Girl.wav"></audio>
+    <button onclick="playAudio('audio1')">Play</button>
+    <button onclick="pauseAudio('audio1')">Pause</button>
+  </div>
+  <div class="track">
+    <p>🎵 Mac N Cheese</p>
+    <audio id="audio2" src="Mac N Cheese.wav"></audio>
+    <button onclick="playAudio('audio2')">Play</button>
+    <button onclick="pauseAudio('audio2')">Pause</button>
+  </div>
+  <div class="track">
+    <p>🎵 The Trio Mastered</p>
+    <audio id="audio3" src="The Trio Mastered.wav"></audio>
+    <button onclick="playAudio('audio3')">Play</button>
+    <button onclick="pauseAudio('audio3')">Pause</button>
+  </div>
+  <div class="track">
+    <p>🎵 Blessed Up</p>
+    <audio id="audio4" src="Blessed Up.wav"></audio>
+    <button onclick="playAudio('audio4')">Play</button>
+    <button onclick="pauseAudio('audio4')">Pause</button>
+  </div>
+  <div class="track">
+    <p>🎵 Neverless</p>
+    <audio id="audio5" src="Neverless.wav"></audio>
+    <button onclick="playAudio('audio5')">Play</button>
+    <button onclick="pauseAudio('audio5')">Pause</button>
   </div>
 </div>
 
-<a class="back-link" href="index.html">← Back to Home</a>
+<script>
+  function playAudio(id) {
+    // Pause all other audios first
+    document.querySelectorAll('audio').forEach(audio => {
+      if (audio.id !== id) audio.pause();
+    });
+    document.getElementById(id).play();
+  }
+
+  function pauseAudio(id) {
+    document.getElementById(id).pause();
+  }
+</script>
 
 </body>
 </html>
