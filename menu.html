@@ -137,12 +137,29 @@
   </div>
 </div>
 
-<div style="margin-top: 40px; background-color: #1c1c1c; padding: 20px; border-radius: 10px; box-shadow: 0 0 8px #000; max-width: 800px;">
-  <h2 style="color: #e50914;">🎬 Dreamerr413 – Lose To Win (Official Video)</h2>
-  <video controls width="100%" style="border-radius: 8px; border: 2px solid #e50914;">
-    <source src="Lose To Win.mp4" type="video/mp4">
-  </video>
+<div class="video">
+  <div id="lose-to-win-container">
+    <img 
+      src="Lose To Win.jpg" 
+      alt="Lose To Win Thumbnail" 
+      style="width: 100%; border-radius: 6px; cursor: pointer;" 
+      onclick="playLoseToWin()"
+    >
+  </div>
+  <div class="video-title">Dreamerr413 – Lose To Win (Official Video)</div>
 </div>
+
+<script>
+  function playLoseToWin() {
+    const container = document.getElementById('lose-to-win-container');
+    container.innerHTML = `
+      <video autoplay controls style="width: 100%; border-radius: 6px; border: 2px solid #e50914;">
+        <source src="Lose To Win.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    `;
+  }
+</script>
 
 <div style="margin-top: 50px; text-align: center;">
   <h2 style="color: #e50914; font-size: 28px;">Listen to More 🔊</h2>
