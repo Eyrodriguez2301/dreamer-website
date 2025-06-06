@@ -15,18 +15,19 @@
       text-align: center;
       padding: 40px 20px;
     }
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('911nolan.png') center center / cover no-repeat;
-  opacity: 0.5; /* adjust how visible the image is */
-  filter: grayscale(100%) brightness(0.5); /* makes it grayed out + dark */
-  z-index: -1;
-}
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('911nolan.png') center center / cover no-repeat;
+      opacity: 0.5;
+      filter: grayscale(100%) brightness(0.5);
+      z-index: -1;
+    }
 
     .profile-img {
       width: 180px;
@@ -118,71 +119,78 @@ body::before {
     <a href="https://youtu.be/MszRq_2EJ3c?si=d5jWgIztRmtcf9AF" target="_blank">
       <img src="coldnights.png" alt="Cold Nights">
     </a>
-    <div class="video-title">Dreamer – Cold Nights (Official Music Video)</div>
+    <div class="video-title">Dreamerr413 – Cold Nights (Official Music Video)</div>
   </div>
 
   <div class="video">
     <a href="https://youtu.be/RJ3OVysLOuw?si=rOYd2xldPjZP1iKA" target="_blank">
       <img src="Remedies.png" alt="Remedies">
     </a>
-    <div class="video-title">Dreamer – Remedies (Official Audio)</div>
+    <div class="video-title">Dreamerr413 – Remedies (Official Audio)</div>
+  </div>
+
+  <div class="video">
+    <a href="https://youtu.be/TK-sc_4UxjU?si=hfXtzcCYA_mJ-59s" target="_blank">
+      <img src="Breathing.png" alt="Breathing">
+    </a>
+    <div class="video-title">Dreamerr413 – Breathing (Official Audio)</div>
   </div>
 </div>
-  <div style="margin-top: 40px; background-color: #1c1c1c; padding: 20px; border-radius: 10px; box-shadow: 0 0 8px #000; max-width: 800px;">
-  <h2 style="color: #e50914;">🎬 Dreamer – Lose To Win (Official Video)</h2>
+
+<div style="margin-top: 40px; background-color: #1c1c1c; padding: 20px; border-radius: 10px; box-shadow: 0 0 8px #000; max-width: 800px;">
+  <h2 style="color: #e50914;">🎬 Dreamerr413 – Lose To Win (Official Video)</h2>
   <video controls width="100%" style="border-radius: 8px; border: 2px solid #e50914;">
-<source src="Lose To Win.mp4" type="video/mp4">
+    <source src="Lose To Win.mp4" type="video/mp4">
   </video>
-    <body></body>
 </div>
-  
+
 <div style="margin-top: 50px; text-align: center;">
   <h2 style="color: #e50914; font-size: 28px;">Listen to More 🔊</h2>
   
   <div style="display: flex; flex-direction: column; gap: 20px; align-items: center; margin-top: 20px;">
-
-<div id="music-players">
-  <div class="track">
-  <p>🌟 EXCLUSIVE – Can't Stop</p>
-  <audio id="audio0" src="Cant Stop.wav"></audio>
-  <button onclick="playAudio('audio0')">Play</button>
-  <button onclick="pauseAudio('audio0')">Pause</button>
-</div>
-  <div class="track">
-    <p>🎵 Barbie Girl</p>
-    <audio id="audio1" src="Barbie Girl.wav"></audio>
-    <button onclick="playAudio('audio1')">Play</button>
-    <button onclick="pauseAudio('audio1')">Pause</button>
-  </div>
-  <div class="track">
-    <p>🎵 Mac N Cheese</p>
-    <audio id="audio2" src="Mac N Cheese.wav"></audio>
-    <button onclick="playAudio('audio2')">Play</button>
-    <button onclick="pauseAudio('audio2')">Pause</button>
-  </div>
-  <div class="track">
-    <p>🎵 The Trio Mastered</p>
-    <audio id="audio3" src="The Trio Mastered.wav"></audio>
-    <button onclick="playAudio('audio3')">Play</button>
-    <button onclick="pauseAudio('audio3')">Pause</button>
-  </div>
-  <div class="track">
-    <p>🎵 Blessed Up</p>
-    <audio id="audio4" src="Blessed Up.wav"></audio>
-    <button onclick="playAudio('audio4')">Play</button>
-    <button onclick="pauseAudio('audio4')">Pause</button>
-  </div>
-  <div class="track">
-    <p>🎵 Neverless</p>
-    <audio id="audio5" src="Neverless.wav"></audio>
-    <button onclick="playAudio('audio5')">Play</button>
-    <button onclick="pauseAudio('audio5')">Pause</button>
+    <div id="music-players">
+      <div class="track">
+        <p>🌟 EXCLUSIVE – Can't Stop</p>
+        <audio id="audio0" src="Cant Stop.wav"></audio>
+        <button onclick="playAudio('audio0')">Play</button>
+        <button onclick="pauseAudio('audio0')">Pause</button>
+      </div>
+      <div class="track">
+        <p>🎵 Barbie Girl</p>
+        <audio id="audio1" src="Barbie Girl.wav"></audio>
+        <button onclick="playAudio('audio1')">Play</button>
+        <button onclick="pauseAudio('audio1')">Pause</button>
+      </div>
+      <div class="track">
+        <p>🎵 Mac N Cheese</p>
+        <audio id="audio2" src="Mac N Cheese.wav"></audio>
+        <button onclick="playAudio('audio2')">Play</button>
+        <button onclick="pauseAudio('audio2')">Pause</button>
+      </div>
+      <div class="track">
+        <p>🎵 The Trio Mastered</p>
+        <audio id="audio3" src="The Trio Mastered.wav"></audio>
+        <button onclick="playAudio('audio3')">Play</button>
+        <button onclick="pauseAudio('audio3')">Pause</button>
+      </div>
+      <div class="track">
+        <p>🎵 Blessed Up</p>
+        <audio id="audio4" src="Blessed Up.wav"></audio>
+        <button onclick="playAudio('audio4')">Play</button>
+        <button onclick="pauseAudio('audio4')">Pause</button>
+      </div>
+      <div class="track">
+        <p>🎵 Neverless</p>
+        <audio id="audio5" src="Neverless.wav"></audio>
+        <button onclick="playAudio('audio5')">Play</button>
+        <button onclick="pauseAudio('audio5')">Pause</button>
+      </div>
+    </div>
   </div>
 </div>
 
 <script>
   function playAudio(id) {
-    // Pause all other audios first
     document.querySelectorAll('audio').forEach(audio => {
       if (audio.id !== id) audio.pause();
     });
@@ -195,6 +203,6 @@ body::before {
 </script>
 
 <a class="back-link" href="index.html">← Back to Home</a>
-    
+
 </body>
 </html>
